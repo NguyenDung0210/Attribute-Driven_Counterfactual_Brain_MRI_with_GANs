@@ -1,0 +1,6 @@
+nibabel
+nilearn
+numpy
+matplotlib
+scikit-image
+glob
