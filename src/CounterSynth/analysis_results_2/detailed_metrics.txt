@@ -1,0 +1,37 @@
+============================================================
+MRI COUNTERFACTUAL GENERATION - DETAILED METRICS
+============================================================
+
+Input Image: data/sub-BrainAge000023/anat/sub-BrainAge000023_T1w.nii.gz
+Target Age: 65
+Target Gender: Female
+
+OVERALL METRICS:
+MSE: 0.000235
+SSIM: 0.979600
+Pearson Correlation: 0.998268
+PSNR: 37.70 dB
+MAE: 0.005552
+
+PER-SLICE METRICS:
+
+Axial Slice:
+  MSE: 0.000508
+  SSIM: 0.963168
+  Pearson Corr.: 0.996788
+  PSNR: 32.95 dB
+  MAE: 0.010430
+
+Sagittal Slice:
+  MSE: 0.000091
+  SSIM: 0.988573
+  Pearson Corr.: 0.999042
+  PSNR: 40.43 dB
+  MAE: 0.002209
+
+Coronal Slice:
+  MSE: 0.000106
+  SSIM: 0.987060
+  Pearson Corr.: 0.998975
+  PSNR: 39.73 dB
+  MAE: 0.004018
