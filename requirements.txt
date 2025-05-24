@@ -1,6 +1,13 @@
 nibabel
 nilearn
 numpy
+pandas
 matplotlib
+seaborn
+scipy
+pillow
 scikit-image
+torch
+torchvision
+pytorch-lightning
 glob
