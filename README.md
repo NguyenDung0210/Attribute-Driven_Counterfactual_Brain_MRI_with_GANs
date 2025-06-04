@@ -4,6 +4,8 @@ This repository contains multiple Generative Adversarial Network (GAN) architect
 ---
 
 ## 📁 Repository Structure
+```
+.
 ├── data/ # Dataset folder
 │ ├── load_MRI_data.ipynb # Data loading notebook
 │ ├── check_data.ipynb # Data checking/visualization
@@ -15,6 +17,7 @@ This repository contains multiple Generative Adversarial Network (GAN) architect
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+```
 
 ## 📦 Requirements
 Before running the code, install the required Python packages:
@@ -25,11 +28,13 @@ pip install -r requirements.txt
 
 ## 📂 Dataset Structure
 Your dataset should follow the structure below:
+```
 📂 data
  ├── participants.xlsx
  └── sub-BrainAgeXXXXX/
      └── anat/
          └── sub-BrainAgeXXXXX_T1w.nii.gz
+```
 - participants.xlsx must contain the following columns:
   - subject_id
   - subject_age
@@ -37,26 +42,26 @@ Your dataset should follow the structure below:
   - (any other relevant metadata)
 
 ## 🚀 How to Run
-1. Navigate to the GAN architecture you want to use inside the src/ folder. Available options:
+### 1. Navigate to the GAN architecture you want to use inside the src/ folder. Available options:
 - CounterSynth/
 - CycleGAN/
 - StyleGAN/
 - DCGAN/
 
-2. Open the corresponding .ipynb notebook in that folder.
+### 2. Open the corresponding .ipynb notebook in that folder.
 
-3. In the notebook:
+### 3. In the notebook:
 - Run the cell that loads and prepares the dataset (look for a class like BrainMRIDataset)
 - Run the model definition cells for Generator and Discriminator
 - Run the training loop setup
 
-4. Continue executing the cells until the main() function appears.
+### 4. Continue executing the cells until the main() function appears.
 
-5. Modify the arguments inside the main() call to:
+### 5. Modify the arguments inside the main() call to:
 - Set the correct path to your data/ folder
 - Adjust training parameters as needed (e.g., batch size, epochs)
 
-6. Run the main() function to start training.
+### 6. Run the main() function to start training.
 
 ## 📌 Notes
 - All notebooks are self-contained. Simply running all cells in order up to and including main() should be enough to reproduce training.
